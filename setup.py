@@ -5,11 +5,11 @@ ez_setup.use_setuptools()
 from setuptools import setup, find_packages
 
 setup(
-    name = 'media.core',
-    version = '0.0.1dev',
-    author = 'David Andreoletti',
-    packages = find_packages(),
-    description = 'Media Core'
+    name='media.core',
+    version='0.0.1dev',
+    author='David Andreoletti',
+    packages=find_packages(),
+    description='Media Core'
 )
 
-print "packages==>";print find_packages()
+print "packages==>" + str(find_packages())
