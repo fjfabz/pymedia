@@ -14,6 +14,8 @@ class AudioStream(MediaStream):
         @param: file Path to media file
         @param: codecLongName Codec long name
         @param: codecTag Codec id/tag
+        @param: codecTagString Codec tag string
+        @param: codecTagName Codec name
         @param: streamIndex Stream Index in media
         @param: bitPerSample Bits per sample
         @param: sampleRate Sample rate in Hz
@@ -29,11 +31,13 @@ class AudioStream(MediaStream):
     def getBitPerSample(self):
         """
         Returns this media's bit per sample
+        @return media's bit per sample
         """
         return self._bitPerSample
 
     def getSampleRate(self):
         """
         Returns this media's sample rate
+        @return media's sample rate
         """
         return self._sampleRate

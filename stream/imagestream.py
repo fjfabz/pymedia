@@ -10,10 +10,12 @@ class ImageStream(MediaStream):
                  quality=None, densityX=None, densityY=None):
         """
         Constructor
-        @param: file Path to media file
+        @param: filename Path to media file
         @param: width Image width
         @param: height Image height
         @param: quality Image quality
+        @param: densityX Image DPI X
+        @param: densityY Image DPI Y
         """
         super(ImageStream, self).__init__(filename=filename, mediaType="image")
         self._width = int(width) if (width != None) else None
@@ -25,29 +27,34 @@ class ImageStream(MediaStream):
     def getWidth(self):
         """
         Returns this media's width
+        @return media's width
         """
         return self._width
 
     def getHeight(self):
         """
         Returns this media's height
+        @return media's height
         """
         return self._height
 
     def getQuality(self):
         """
-        Returns this media's width
+        Returns this media's quality
+        @return media's quality
         """
         return self._quality
 
     def getDensityX(self):
         """
         Returns this media's density X
+        @return media's density X
         """
         return self._densityX
 
     def getDensityY(self):
         """
         Returns this media's density Y
+        @return media's density Y
         """
         return self._densityY
