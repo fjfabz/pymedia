@@ -1,3 +1,6 @@
+import copy
+
+
 class MediaFile(object):
     """
     A media file
@@ -94,3 +97,20 @@ class MediaFile(object):
         @param containerType New description
         """
         self._description = description
+
+    def __deepcopy__(self, memo):
+        # print '__deepcopy__(%s)' % str(memo)
+        dpmf = MediaFile()
+        dpmf.setFileName(copy.deepcopy(self._filename, memo))
+        dpmf.setVideoStreams(copy.deepcopy(self._videoStreams, memo))
+        dpmf.setAudioStreams(copy.deepcopy(self._audioStreams, memo))
+        dpmf.setImageStreams(copy.deepcopy(self._imageStreams, memo))
+        dpmf.setContainerType(copy.deepcopy(self._containerType, memo))
+        dpmf.setDescription(copy.deepcopy(self._description, memo))
+        
+        # print 'self  :', self
+        # print 'dpmf:', dpmf
+        # print 'dpmf is l:', (dpmf is self)
+        # print 'dpmf == l:', (dpmf == self)
+        
+        return dpmf
