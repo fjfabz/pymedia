@@ -13,6 +13,17 @@ MOTIVATION:
 
 My current personal project pyconvert_ requires to handle any kind of media file. A media file in this library can contain video, audio, images streams all together.
 
+INSTALLATION:
+=============
+
+Install the latest sources:
+
+easy_install https://github.com/davidandreoletti/pymedia/zipball/master
+
+Install a specific release (eg: v0.0.1):
+
+easy_install https://github.com/davidandreoletti/pymedia/zipball/v0.0.1
+
 DOCUMENTATION
 =============
 
