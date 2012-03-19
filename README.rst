@@ -16,13 +16,17 @@ My current personal project pyconvert_ requires to handle any kind of media file
 INSTALLATION:
 =============
 
-Install the latest sources:
+"standard" mode:
+----------------
 
-easy_install https://github.com/davidandreoletti/pymedia/zipball/master
+Latest sources: 
 
-Install a specific release (eg: v0.0.1):
+``easy_install https://github.com/davidandreoletti/pymedia/zipball/master``
 
-easy_install https://github.com/davidandreoletti/pymedia/zipball/v0.0.1
+or a specific release, eg v0.0.1:
+
+``easy_install https://github.com/davidandreoletti/pymedia/zipball/v0.0.1``
+
 
 DOCUMENTATION
 =============
